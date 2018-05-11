@@ -1,6 +1,6 @@
 //
 //  ZJWavesView.h
-//  DoubleWavesAnimation
+//  ZJWavesView
 //
 //  Created by abner on 2018/5/11.
 //  Copyright © 2018年 cc. All rights reserved.
