@@ -19,7 +19,7 @@
 {
     [super viewDidLoad];
     
-    ZJWavesView *wavesView = [[ZJWavesView alloc] initWithFrame:CGRectMake(0, 50, self.view.frame.size.width, 80)];
+    ZJWavesView *wavesView = [[ZJWavesView alloc] initWithFrame:CGRectMake(0, -20, self.view.frame.size.width, 220)];
     [self.view addSubview:wavesView];
 }
 
