@@ -233,8 +233,8 @@
     self.firstWares = [[ZJWaves alloc] initWithFrame:self.bounds waveA:12 waveW:0.5/30.0 wavesSpeed:0.02 wavesWidth:self.frame.size.width currentK:self.frame.size.height*0.5 wavesType:ZJWavesTypeSin location:self.location wavesColor:self.wavesColor];
     self.secondWares = [[ZJWaves alloc] initWithFrame:self.bounds waveA:13 waveW:0.5/30.0 wavesSpeed:0.04 wavesWidth:self.frame.size.width currentK:self.frame.size.height*0.5 wavesType:ZJWavesTypeCos location:self.location wavesColor:self.wavesColor];
 
-//    self.firstWares.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin |UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-//    self.secondWares.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin |UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    self.firstWares.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin |UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    self.secondWares.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin |UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
     [self addSubview:self.firstWares];
     [self addSubview:self.secondWares];
@@ -295,6 +295,11 @@
         self.animationWaveTimer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(animateWave) userInfo:nil repeats:YES];
         [[NSRunLoop mainRunLoop] addTimer:self.animationWaveTimer forMode:NSRunLoopCommonModes];
     }
+}
+
+- (void)dealloc
+{
+    [self.animationWaveTimer invalidate];
 }
 
 @end
