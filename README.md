@@ -9,6 +9,7 @@
 ---
 
 <img src="https://github.com/FTCcheV/DoubleWavesAnimation/raw/master/DoubleWavesAnimation/DoubleWavesAnimation/%E7%9B%B8%E5%90%8C%E9%80%9F%E5%BA%A6:%E6%8C%AF%E5%B9%85:%E5%91%A8%E6%9C%9F:%E9%9D%9E%E9%9C%87%E8%8D%A1.gif" alt="image" style="max-width:100%;">
+<img src="https://upload-images.jianshu.io/upload_images/2363830-61b7f7c9a2a8716c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640" alt="image" style="max-width:100%;">
 
 该库封装自[DoubleWavesAnimation](https://github.com/FTC-Chen/DoubleWavesAnimation)，感兴趣的童鞋可以参考他的[文章](http://www.jianshu.com/p/908241bf769f)
 ---
@@ -31,8 +32,23 @@ ZJWavesView.m
 
 # 二、Usage【使用方式】
 ```objc
+// 1.手动初始化：-initWithFrame
 ZJWavesView *wavesView = [[ZJWavesView alloc] initWithFrame:CGRectMake(0, -20, self.view.frame.size.width, 220)];
 [self.view addSubview:wavesView];
+
+// 2.手动初始化: -initWithFrame:location:wavesColor
+ZJWavesView *wavesView = [[ZJWavesView alloc] initWithFrame:CGRectMake(0, -20, self.view.frame.size.width, 220) location:ZJWavesViewWaveLocationBottom wavesColor:[UIColor redColor]];
+[self.view addSubview:wavesView];
+
+// 3.手动初始化: +waveWithFrame:location:wavesColor
+ZJWavesView *wavesView = [ZJWavesView waveWithFrame:CGRectMake(0, self.view.frame.size.height - 200, self.view.frame.size.width, 220) location:ZJWavesViewWaveLocationTop wavesColor:[UIColor redColor] isAnimateWave:YES];
+[self.view addSubview:wavesView];
+
+// 4.xib
+ZJXibDemoView *demoView = [ZJXibDemoView xib];
+demoView.frame = CGRectMake(0, self.view.frame.size.height - 200, self.view.frame.size.width, 220);
+demoView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin |UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+[self.view addSubview:demoView];
 ```
 
 # 三、结语

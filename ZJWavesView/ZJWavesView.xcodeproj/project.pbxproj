@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A9D799120CF7DB100B7F445 /* ZJXibDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9D799020CF7DB100B7F445 /* ZJXibDemoView.m */; };
+		9A9D799320CF7DB900B7F445 /* ZJXibDemoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D799220CF7DB900B7F445 /* ZJXibDemoView.xib */; };
 		9AF1320C20A57DA00087822F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1320B20A57DA00087822F /* AppDelegate.m */; };
 		9AF1320F20A57DA00087822F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1320E20A57DA00087822F /* ViewController.m */; };
 		9AF1321220A57DA00087822F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF1321020A57DA00087822F /* Main.storyboard */; };
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A9D798F20CF7DB100B7F445 /* ZJXibDemoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJXibDemoView.h; sourceTree = "<group>"; };
+		9A9D799020CF7DB100B7F445 /* ZJXibDemoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJXibDemoView.m; sourceTree = "<group>"; };
+		9A9D799220CF7DB900B7F445 /* ZJXibDemoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZJXibDemoView.xib; sourceTree = "<group>"; };
 		9AF1320720A57DA00087822F /* ZJWavesView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJWavesView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AF1320A20A57DA00087822F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9AF1320B20A57DA00087822F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -109,6 +114,9 @@
 				9AF1320B20A57DA00087822F /* AppDelegate.m */,
 				9AF1320D20A57DA00087822F /* ViewController.h */,
 				9AF1320E20A57DA00087822F /* ViewController.m */,
+				9A9D798F20CF7DB100B7F445 /* ZJXibDemoView.h */,
+				9A9D799020CF7DB100B7F445 /* ZJXibDemoView.m */,
+				9A9D799220CF7DB900B7F445 /* ZJXibDemoView.xib */,
 				9AF1321020A57DA00087822F /* Main.storyboard */,
 				9AF1321320A57DA70087822F /* Assets.xcassets */,
 				9AF1321520A57DA70087822F /* LaunchScreen.storyboard */,
@@ -249,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AF1321720A57DA70087822F /* LaunchScreen.storyboard in Resources */,
+				9A9D799320CF7DB900B7F445 /* ZJXibDemoView.xib in Resources */,
 				9AF1321420A57DA70087822F /* Assets.xcassets in Resources */,
 				9AF1321220A57DA00087822F /* Main.storyboard in Resources */,
 			);
@@ -276,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AF1320F20A57DA00087822F /* ViewController.m in Sources */,
+				9A9D799120CF7DB100B7F445 /* ZJXibDemoView.m in Sources */,
 				9AF1326020A57DE80087822F /* ZJWavesView.m in Sources */,
 				9AF1321A20A57DA70087822F /* main.m in Sources */,
 				9AF1320C20A57DA00087822F /* AppDelegate.m in Sources */,
@@ -384,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -436,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
