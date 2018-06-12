@@ -8,14 +8,7 @@
 
 ---
 
-<div>
 <img src="https://upload-images.jianshu.io/upload_images/2363830-df7e70a0e9afe145.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt="image" style="max-width:100%;">
-<img src="https://upload-images.jianshu.io/upload_images/2363830-61b7f7c9a2a8716c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640" alt="image" style="max-width:100%;">
-</div>
-<div align=left>
-<img width="284.5" height="505.5" src="https://upload-images.jianshu.io/upload_images/2363830-df7e70a0e9afe145.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/700"/>
-<img width="284.5" height="505.5" src="https://upload-images.jianshu.io/upload_images/2363830-61b7f7c9a2a8716c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640"/>
-</div>
 
 该库封装自[DoubleWavesAnimation](https://github.com/FTC-Chen/DoubleWavesAnimation)，感兴趣的童鞋可以参考他的[文章](http://www.jianshu.com/p/908241bf769f)
 ---
